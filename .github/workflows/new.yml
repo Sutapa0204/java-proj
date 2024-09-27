@@ -45,4 +45,11 @@ jobs:
       # Step 5: Run tests
       - name: Run tests with Maven
         run: mvn test
+
+      #upload artifact
+      - name: upload artifact
+      - uses: action/upload-artifact@v4
+        with:
+          name: my_artifact
+          path: downloads        
     
