@@ -37,10 +37,10 @@ jobs:
         run: mvn -B package --file pom.xml
         #upload artifact
       - name: upload artifact
-      - uses: action/upload-artifact@v2
+      - uses: action/upload-artifact@v4
         with:
           name: my_artifact
-          path: target/war
+          path: downloads
  
       # Step 5: Run tests
       - name: Run tests with Maven
