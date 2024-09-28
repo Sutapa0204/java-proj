@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: app-artifact
-          path: target/*.jar  # or *.war if it's a WAR file
+          path: target/*.war  # or *.war if it's a WAR file
 
   deploy:
     runs-on: ubuntu-latest
