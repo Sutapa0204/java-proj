@@ -35,7 +35,7 @@ jobs:
 
       # Upload the built artifact (e.g., a JAR or WAR file)
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: app-artifact
           path: target/*.jar  # or *.war if it's a WAR file
@@ -47,7 +47,7 @@ jobs:
     steps:
       # Download the artifact uploaded from the previous job
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: app-artifact
           path: ./artifact
