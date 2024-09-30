@@ -36,7 +36,7 @@ jobs:
         with:
           args: >
               -Dsonar.organization=sutapa0204
-              -Dsonar.projectKey=sutapa0204
+              -Dsonar.projectKey=qwerty2
               -Dsonar.python.coverage.reportPaths=coverage.xml 
             
 
